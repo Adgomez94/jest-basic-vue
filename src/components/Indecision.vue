@@ -38,7 +38,7 @@ export default {
   // Estara observando question y siempre tiene que ser la funcion con el numbre de la variable que quieres observar
   watch:{
     question(value, oldValue){
-      
+      console.log({value})
       this.isValidQuestion = false
       if( !value.includes('?') ) return
 
